@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob shape1"></div>
+        <div class="blob shape2"></div>
+        <div class="blob shape3"></div>
+    </div>
+    
+    <main class="glass-container">
+        <header>
+            <h1>Status Directory</h1>
+            <p>Check the availability of our faculties</p>
+        </header>
+
+        <section class="selection-area">
+            <div class="input-group">
+                <label for="faculty-select">Select Faculty</label>
+                <div class="custom-select-wrapper">
+                    <select id="faculty-select" aria-label="Select Faculty">
+                        <option value="" disabled selected>Choose a person...</option>
+                        <option value="principal">Principal Sir</option>
+                        <option value="om">OM Sir</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="status-card" class="status-card hidden">
+            <div class="profile-avatar" id="avatar">
+                <span id="avatar-initials">?</span>
+            </div>
+            <h2 id="faculty-name">Name</h2>
+            <div class="status-badge" id="status-badge">
+                <span class="status-dot"></span>
+                <span id="status-text">Status</span>
+            </div>
+            <p id="room-info" class="room-info">Room: --</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
